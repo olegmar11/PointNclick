@@ -1,0 +1,52 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class slotStatus : MonoBehaviour
+{
+    private Vector3 mousePosition;
+    public float moveSpeed = 0.1f;
+    public bool isEmpty = true;
+    public string itemID;
+    public Sprite emptyslot;
+    public bool inHands = false;
+    GameObject Hand;
+    SpriteRenderer slot;
+    public SysVal Sys;
+
+    private void Start()
+    {
+        Hand = GameObject.Find("Hand");
+    }
+    public void OnMouseDown()
+    {
+        if (inHands)
+        {
+            Hand.transform.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0);
+            inHands = false;
+            Hand.GetComponent<handStatus>().itemInHands = false;
+            Hand.GetComponent<handStatus>().slotName = "";
+            slot.sprite = Sys.getSprite(itemID + "slot");
+            return;
+        }
+        if(itemID != "")
+        {
+            Hand.transform.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+            Hand.transform.GetComponent<SpriteRenderer>().sprite = Sys.getSprite(itemID);
+            Hand.GetComponent<handStatus>().itemInHands = true;
+            Hand.GetComponent<handStatus>().slotName = transform.name;
+            inHands = true;
+            slot.sprite = emptyslot;
+        }
+    }
+    void Update()
+    {
+        slot = transform.parent.GetComponent<SpriteRenderer>();
+        if (inHands)
+        {
+            mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePosition.z = -2;
+            Hand.transform.position = mousePosition;
+        }
+    }
+}
