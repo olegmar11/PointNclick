@@ -13,6 +13,7 @@ public class slotStatus : MonoBehaviour
     GameObject Hand;
     public SpriteRenderer slot;
     public SysVal Sys;
+    public float cardCounter = 0f;
 
     private void Start()
     {
@@ -49,6 +50,19 @@ public class slotStatus : MonoBehaviour
             mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePosition.z = -2;
             Hand.transform.position = mousePosition;
+        }
+        if (slot.sprite == Sys.getSprite("redcardslot") || slot.sprite == Sys.getSprite("bluecardslot"))
+        {
+            if (!inHands)
+            {
+                cardCounter += Time.deltaTime;
+                if (cardCounter >= 60)
+                {
+                    cardCounter = 0f;
+                    slot.sprite = Sys.getSprite("yellowcardslot");
+                    itemID = "yellowcard";
+                }
+            }
         }
     }
 }

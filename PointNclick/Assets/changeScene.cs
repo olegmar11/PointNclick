@@ -6,7 +6,7 @@ public class changeScene : MonoBehaviour
 {
     public GameObject start;
     public GameObject finish;
-    public bool needTorch = false;
+    public bool needTorch = false, needElectricity = false;
     public float x = 0f;
     public float y = 0f;
 
@@ -30,7 +30,11 @@ public class changeScene : MonoBehaviour
         {
             changeTheScene();
         }
-        if (!needTorch)
+        if (needElectricity && GameObject.Find("SystemValues").GetComponent<SysVal>().electricityOn)
+        {
+            changeTheScene();
+        }
+        if (!needTorch && !needElectricity)
         {
             changeTheScene();
         }

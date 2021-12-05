@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,12 +53,23 @@
     <UnityVersion>2020.3.21f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\fridgeKeyStatus.cs" />
     <Compile Include="Assets\move2Sprites.cs" />
     <Compile Include="Assets\barrierStatus.cs" />
     <Compile Include="Assets\inventoryMenuReset.cs" />
+    <Compile Include="Assets\microwaveStatus.cs" />
+    <Compile Include="Assets\fuseBoxStatus.cs" />
+    <Compile Include="Assets\doorStatus.cs" />
     <Compile Include="Assets\SysVal.cs" />
+    <Compile Include="Assets\microwaveKeyStatus.cs" />
     <Compile Include="Assets\changeSprite.cs" />
+    <Compile Include="Assets\fridgeStatus.cs" />
+    <Compile Include="Assets\fuseBoxLever.cs" />
     <Compile Include="Assets\handStatus.cs" />
+    <Compile Include="Assets\microButtonStatus.cs" />
     <Compile Include="Assets\mcStatus.cs" />
     <Compile Include="Assets\checkTime.cs" />
     <Compile Include="Assets\changeScene.cs" />
@@ -68,9 +79,12 @@
     <Compile Include="Assets\moveSprite.cs" />
     <Compile Include="Assets\disappearOnClickIfItemInHands.cs" />
     <Compile Include="Assets\menuAppear.cs" />
-    <Compile Include="Assets\fuseBoxStatus.cs" />
-    <Compile Include="Assets\fuseBoxLever.cs" />
-    <Compile Include="Assets\doorStatus.cs" />
+    <Compile Include="Assets\keycardReaderStatus.cs" />
+    <Compile Include="Assets\keyCardDoorStatus.cs" />
+    <Compile Include="Assets\soundPlayer.cs" />
+    <Compile Include="Assets\exitGame.cs" />
+    <Compile Include="Assets\continueGame.cs" />
+    <Compile Include="Assets\pauseGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
