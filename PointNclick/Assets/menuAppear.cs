@@ -36,7 +36,7 @@ public class menuAppear : MonoBehaviour
         Idle();
         if (mouseOver)
         {
-            if (offsetX > -2.3)
+            if (offsetX > -2.0)
             {
                 item.transform.position -= offset;
                 itemBox.transform.position = new Vector3(item.transform.position.x, item.transform.position.y, 0);
@@ -52,15 +52,15 @@ public class menuAppear : MonoBehaviour
                 offsetX += 0.02f;
             }
         }
-        slot1.transform.position = new Vector3(item.transform.position.x, item.transform.position.y + 3.85f, -1);
-        slot1.transform.parent.position = new Vector3(item.transform.position.x, item.transform.position.y + 3.85f, -1);
-        slot2.transform.position = new Vector3(item.transform.position.x, item.transform.position.y + 2f, -1);
-        slot2.transform.parent.position = new Vector3(item.transform.position.x, item.transform.position.y + 2f, -1);
-        slot3.transform.position = new Vector3(item.transform.position.x, item.transform.position.y + 0.15f, -1);
-        slot3.transform.parent.position = new Vector3(item.transform.position.x, item.transform.position.y + 0.15f, -1);
-        slot4.transform.position = new Vector3(item.transform.position.x, item.transform.position.y + -1.7f, -1);
-        slot4.transform.parent.position = new Vector3(item.transform.position.x, item.transform.position.y + -1.7f, -1);
-        slot5.transform.position = new Vector3(item.transform.position.x, item.transform.position.y + -3.55f, -1);
-        slot5.transform.parent.position = new Vector3(item.transform.position.x, item.transform.position.y + -3.55f, -1);
+        slot1.transform.position = new Vector3(item.transform.position.x, item.transform.position.y + 3.5f, -1);
+        slot1.transform.parent.position = new Vector3(item.transform.position.x, item.transform.position.y + 3.5f, -1);
+        slot2.transform.position = new Vector3(item.transform.position.x, item.transform.position.y + 1.65f, -1);
+        slot2.transform.parent.position = new Vector3(item.transform.position.x, item.transform.position.y + 1.65f, -1);
+        slot3.transform.position = new Vector3(item.transform.position.x, item.transform.position.y + -0.19f, -1);
+        slot3.transform.parent.position = new Vector3(item.transform.position.x, item.transform.position.y + -0.19f, -1);
+        slot4.transform.position = new Vector3(item.transform.position.x, item.transform.position.y + -2.04f, -1);
+        slot4.transform.parent.position = new Vector3(item.transform.position.x, item.transform.position.y + -2.04f, -1);
+        slot5.transform.position = new Vector3(item.transform.position.x, item.transform.position.y + -3.89f, -1);
+        slot5.transform.parent.position = new Vector3(item.transform.position.x, item.transform.position.y + -3.89f, -1);
     }
 }

@@ -19,7 +19,7 @@ public class disappearOnClickIfItemInHands : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (Hand.GetComponent<handStatus>().itemInHands == true && Hand.transform.GetComponent<SpriteRenderer>().sprite == requiredItem)
+        if (Hand.GetComponent<handStatus>().itemInHands && Hand.transform.GetComponent<SpriteRenderer>().sprite == requiredItem)
         {
             slot = GameObject.Find(Hand.GetComponent<handStatus>().slotName);
             slot.GetComponent<slotStatus>().OnMouseDown();

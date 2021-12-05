@@ -11,7 +11,7 @@ public class slotStatus : MonoBehaviour
     public Sprite emptyslot;
     public bool inHands = false;
     GameObject Hand;
-    SpriteRenderer slot;
+    public SpriteRenderer slot;
     public SysVal Sys;
 
     private void Start()
@@ -26,6 +26,7 @@ public class slotStatus : MonoBehaviour
             inHands = false;
             Hand.GetComponent<handStatus>().itemInHands = false;
             Hand.GetComponent<handStatus>().slotName = "";
+            Hand.GetComponent<handStatus>().itemName = "";
             slot.sprite = Sys.getSprite(itemID + "slot");
             return;
         }
@@ -35,6 +36,7 @@ public class slotStatus : MonoBehaviour
             Hand.transform.GetComponent<SpriteRenderer>().sprite = Sys.getSprite(itemID);
             Hand.GetComponent<handStatus>().itemInHands = true;
             Hand.GetComponent<handStatus>().slotName = transform.name;
+            Hand.GetComponent<handStatus>().itemName = itemID;
             inHands = true;
             slot.sprite = emptyslot;
         }

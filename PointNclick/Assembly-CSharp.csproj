@@ -53,18 +53,24 @@
     <UnityVersion>2020.3.21f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\menuAppear.cs" />
     <Compile Include="Assets\move2Sprites.cs" />
-    <Compile Include="Assets\checkTime.cs" />
+    <Compile Include="Assets\barrierStatus.cs" />
+    <Compile Include="Assets\inventoryMenuReset.cs" />
+    <Compile Include="Assets\SysVal.cs" />
     <Compile Include="Assets\changeSprite.cs" />
-    <Compile Include="Assets\moveSprite.cs" />
-    <Compile Include="Assets\disappearOnClickIfItemInHands.cs" />
+    <Compile Include="Assets\handStatus.cs" />
+    <Compile Include="Assets\mcStatus.cs" />
+    <Compile Include="Assets\checkTime.cs" />
     <Compile Include="Assets\changeScene.cs" />
     <Compile Include="Assets\slotStatus.cs" />
-    <Compile Include="Assets\handStatus.cs" />
-    <Compile Include="Assets\SysVal.cs" />
+    <Compile Include="Assets\loading.cs" />
     <Compile Include="Assets\isClicked.cs" />
-    <Compile Include="Assets\inventoryMenuReset.cs" />
+    <Compile Include="Assets\moveSprite.cs" />
+    <Compile Include="Assets\disappearOnClickIfItemInHands.cs" />
+    <Compile Include="Assets\menuAppear.cs" />
+    <Compile Include="Assets\fuseBoxStatus.cs" />
+    <Compile Include="Assets\fuseBoxLever.cs" />
+    <Compile Include="Assets\doorStatus.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
