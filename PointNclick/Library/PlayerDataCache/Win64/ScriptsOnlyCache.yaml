@@ -40,6 +40,14 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -60,62 +68,68 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1546}
+      Script: {instanceID: 1622}
     - Class: 114
-      Script: {instanceID: 2446}
+      Script: {instanceID: 2522}
     - Class: 114
-      Script: {instanceID: 2484}
+      Script: {instanceID: 2560}
     - Class: 114
-      Script: {instanceID: 2486}
+      Script: {instanceID: 2562}
     - Class: 114
-      Script: {instanceID: 2598}
+      Script: {instanceID: 2674}
     - Class: 114
-      Script: {instanceID: 2648}
+      Script: {instanceID: 2724}
     - Class: 114
-      Script: {instanceID: 2714}
+      Script: {instanceID: 2790}
     - Class: 114
-      Script: {instanceID: 3272}
+      Script: {instanceID: 3348}
     - Class: 114
-      Script: {instanceID: 3278}
+      Script: {instanceID: 3354}
     - Class: 114
-      Script: {instanceID: 3366}
+      Script: {instanceID: 3442}
     - Class: 114
-      Script: {instanceID: 3372}
+      Script: {instanceID: 3448}
     - Class: 114
-      Script: {instanceID: 3512}
+      Script: {instanceID: 3454}
     - Class: 114
-      Script: {instanceID: 4108}
+      Script: {instanceID: 3590}
     - Class: 114
-      Script: {instanceID: 4428}
+      Script: {instanceID: 4504}
     - Class: 114
-      Script: {instanceID: 4664}
+      Script: {instanceID: 4740}
     - Class: 114
-      Script: {instanceID: 4748}
+      Script: {instanceID: 4824}
     - Class: 114
-      Script: {instanceID: 4886}
+      Script: {instanceID: 4962}
     - Class: 114
-      Script: {instanceID: 4946}
+      Script: {instanceID: 5022}
     - Class: 114
-      Script: {instanceID: 5090}
+      Script: {instanceID: 5166}
     - Class: 114
-      Script: {instanceID: 5282}
+      Script: {instanceID: 5358}
     - Class: 114
-      Script: {instanceID: 5380}
+      Script: {instanceID: 5456}
     - Class: 114
-      Script: {instanceID: 5564}
+      Script: {instanceID: 5640}
     - Class: 114
-      Script: {instanceID: 5566}
+      Script: {instanceID: 5642}
     - Class: 114
-      Script: {instanceID: 5738}
+      Script: {instanceID: 5814}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -435,6 +449,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
+      Hash: 5e073afc58e5be23c8991a43eaacb4ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: soundPlayer
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -547,12 +567,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: PositionAsUV1
-  - hash:
-      serializedVersion: 2
-      Hash: 4fd4f38681256dd7a4b2e0d607e56541
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: soundPlayer
   - hash:
       serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
@@ -814,4 +828,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/PointNclick.unity
-  playerPath: C:/Users/maksi/Desktop/Release/PointNclick.exe
+  playerPath: C:/Users/olegm/Desktop/PointNclick.exe

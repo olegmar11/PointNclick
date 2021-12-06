@@ -75,6 +75,7 @@ public class microwaveStatus : MonoBehaviour
         Hand.GetComponent<handStatus>().slotName = "";
         Hand.GetComponent<handStatus>().itemName = "";
     }
+    soundPlayer a;
     private void Update()
     {
         if (hasKeycard && transform.GetComponent<SpriteRenderer>().sprite == microworking)
@@ -85,6 +86,7 @@ public class microwaveStatus : MonoBehaviour
                 counter = 0f;
                 transform.GetComponent<SpriteRenderer>().sprite = microclosed;
                 keyColor = "redcard";
+                a.Play_Microwave_end();
             }
         }
     }

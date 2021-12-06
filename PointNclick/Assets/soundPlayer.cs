@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class soundPlayer : MonoBehaviour
 {
-    public AudioClip badkey, goodkey, winning;
+    public AudioClip badkey, goodkey, winning,microwork,microfinish;
     AudioSource audiosrc;
     private void Start()
     {
@@ -21,5 +21,15 @@ public class soundPlayer : MonoBehaviour
     public void PlayWin()
     {
         audiosrc.PlayOneShot(winning);
+    }
+
+    public void Play_microvawe_work()
+    {
+        audiosrc.PlayOneShot(microwork);
+    }
+
+    public void Play_Microwave_end()
+    {
+        audiosrc.PlayOneShot(microfinish);
     }
 }
